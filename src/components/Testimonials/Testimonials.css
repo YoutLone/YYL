@@ -1,0 +1,102 @@
+.testimonials_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; /* Adjust the gap between cards */
+  }
+  
+  /* Individual testimonial card */
+  .testimonial_card {
+    width: 80%; /* Adjust the width to leave some space between cards */
+    background-color: rgb(26, 26, 26);
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(4, 152, 252, 0.7);
+  }
+  
+  /* Testimonial image */
+  .testimonial_image {
+    width: 100px;
+    height: 100px;
+    margin-left: 35%;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .card_text {
+    padding: 20px;
+    text-align: center;
+    color: rgb(171, 217, 243);
+  }
+  
+  .about_title3 {
+    color: rgb(0, 179, 255);
+    font-size: 1.9rem;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  
+  .red_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 130);
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  .social-icon:hover {
+    background-color: rgb(0, 0, 75);
+  }
+  
+  .social-icon i {
+    pointer-events: none;
+  }
+  
+  /* Media queries for responsiveness */
+  
+  @media (min-width: 768px) {
+    .testimonial_card {
+      width: 40%;
+    }
+
+    .testimonial_image {
+        margin-left: 40%;
+      }
+  }
+  
+  @media (min-width: 1024px) {
+    .testimonial_card {
+      width: 40%;
+    }
+
+    .testimonial_image {
+        margin-left: 40%;
+      }
+  }
+  
+  @media (min-width: 1200px) {
+    .testimonial_card {
+      width: 40%;
+    }
+
+    .testimonial_image {
+        margin-left: 40%;
+      }
+  }
+  
