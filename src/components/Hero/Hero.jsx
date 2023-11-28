@@ -12,7 +12,7 @@ function Hero() {
       <main id="hero">
         <section className="hero_container">
           <p className="hero_title">Hello 👋</p>
-          <p className="hero_title2 name">I'AM THAN MYO HTET</p>
+          <p className="hero_title2 name">I'M THAN MYO HTET</p>
           <Typed className="hero_title3"
           strings={[
             "Full-Stack Web Developer",
