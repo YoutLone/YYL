@@ -5,10 +5,10 @@
 
 }
 
-#nav_logo {
-  font-size: 1.1rem;
-  color: white;
-  font-weight: bolder;
+.my_logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
 }
 
 #links_nav {
