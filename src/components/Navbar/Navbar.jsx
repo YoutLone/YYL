@@ -21,7 +21,7 @@ function Navbar() {
 <header>
         <nav className={`navbar navbar-expand-sm ${isNavOpen ? 'navbar-open' : ''}`} id="nav_general">
           <div className="container-fluid">
-            <a className="navbar-brand" id="nav_logo" href="hero">
+            <a className="navbar-brand" id="nav_logo" href="#">
             <img src={Logo} alt="my_Logo" className="my_logo"/>
             </a>
             <button
