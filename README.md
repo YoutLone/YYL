@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="public/logo.png" alt="logo" width="250px" height="250px"/>
+  <img src="public/Logos/logo.png" alt="logo" width="250px" height="250px"/>
   <br/>
   <h1>Portfolio - Than Myo Htet 🤘</h1>
 </div>
