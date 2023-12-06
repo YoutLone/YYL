@@ -15,6 +15,7 @@ import Netlify from "../../../public/Logos/netlify.png";
 import Ruby from "../../../public/Logos/ruby.png";
 import Nodejs from "../../../public/Logos/nodejs.png";
 import Mysql from "../../../public/Logos/mysql.png";
+import Postgresql from "../../../public/Logos/postgresql.jpg";
 import Rails from "../../../public/Logos/rails.png";
 import Vscode from "../../../public/Logos/vscode.png";
 import Terminal from "../../../public/Logos/terminal.png";
@@ -83,6 +84,7 @@ function About() {
                   <img src={Ruby} alt="" className="grid_item" />
                   <img src={Nodejs} alt="" className="grid_item" />
                   <img src={Mysql} alt="" className="grid_item" />
+                  <img src={Postgresql} alt="" className="grid_item" />
                   <img src={Rails} alt="" className="grid_item" />
                 </div>
               </section>
