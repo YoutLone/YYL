@@ -5,7 +5,7 @@ import Typed from "react-typed";
 
 function Hero() {
   const openResume = () => {
-    window.open("https://drive.google.com/file/d/1bliEn-55eossqOd_WuF79U6__nVaY5XJ/view?usp=sharing", "_blank");
+    window.open("https://drive.google.com/file/d/1REKKMJSGHu2SH9xejrGTZKFkcj7anbGZ/view?usp=sharing", "_blank");
   };
   return (
     <>
