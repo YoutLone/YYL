@@ -13,7 +13,8 @@ import Reacts from "../../../public/Logos/react.png";
 import Bootstrap from "../../../public/Logos/bootstrap.png";
 import Netlify from "../../../public/Logos/netlify.png";
 import Ruby from "../../../public/Logos/ruby.png";
-import Nodejs from "../../../public/Logos/nodejs.png";
+import Python from "../../../public/Logos/python.jpg";
+import Django from "../../../public/Logos/django.jpg";
 import Mysql from "../../../public/Logos/mysql.png";
 import Postgresql from "../../../public/Logos/postgresql.jpg";
 import Rails from "../../../public/Logos/rails.png";
@@ -35,25 +36,12 @@ function About() {
           <AnimateOnScroll animateIn="about_box" className="card_container">
             <section>
               <p className="card_text">
-              Hello, I&apos;m Htet, a recent graduate of Microverse&apos;s
-              Full-Stack development program, and my path to becoming a software
-              engineer is a unique one. With a background in Electrical Engineer
-              my journey into the world of software development.Through my experiences and
-              relentless pursuit of knowledge, I&apos;ve transitioned into a
-              full-stack software engineer.
-              <br/>
-              <br/>
-              Throughout my journey at Microverse, I refined my expertise in software engineering
-              by investing more than 1,300 hours in mastering foundational concepts. This involved
-              active participation in global coding projects through pair programming, contributing
-              to the completion of over 30 projects. I extensively explored the realms of Algorithms
-              & Data Structures and enthusiastically embraced a diverse set of technologies,
-              equipping myself for the dynamic and continually evolving technological landscape.
-              <br />
-              <br />
-              If you are interested in connecting or discussing potential
-              collaborations, please feel free to reach out. Let&apos;s embark
-              on this exciting journey together.
+              Hello, I&apos;m Than Myo Htet, I am a Backend Developer with over 1 year of industry experience, 
+              specializing in Python and  Django for web development. Currently working as a Backend Developer, 
+              I have successfully delivered two large-scale, real-world projects as a backend developer using 
+              Python and Django within a year.
+              I am a dedicated team player with strong communication and leadership skills. 
+              Eager to dive into DevOps and expand my expertise in backend technologies.
               </p>
 
               <div className="red_container">
@@ -82,7 +70,8 @@ function About() {
 
                 <div className="card_tecnology">
                   <img src={Ruby} alt="" className="grid_item" />
-                  <img src={Nodejs} alt="" className="grid_item" />
+                  <img src={Python} alt="" className="grid_item" />
+                  <img src={Django} alt="" className="grid_item" />
                   <img src={Mysql} alt="" className="grid_item" />
                   <img src={Postgresql} alt="" className="grid_item" />
                   <img src={Rails} alt="" className="grid_item" />

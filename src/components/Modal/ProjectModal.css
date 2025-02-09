@@ -45,6 +45,12 @@
   .modal-buttons {
     margin-top: 20px;
   }
+
+  .apology-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+  }  
   
   .modal-buttons a {
     display: inline-block;
