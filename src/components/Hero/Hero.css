@@ -45,6 +45,32 @@
   font-size: 1.05rem;
 }
 
+.hero_stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+  padding: 16px;
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  max-width: 720px;
+}
+
+.hero_stats div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.hero_stats span {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
 .hero_actions {
   display: flex;
   flex-wrap: wrap;

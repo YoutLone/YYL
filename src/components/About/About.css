@@ -86,6 +86,31 @@
   gap: 16px;
 }
 
+.focus_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.focus_card {
+  padding: 20px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, rgba(15, 19, 30, 0.9), rgba(18, 22, 32, 0.7));
+  border: 1px solid var(--border);
+  color: var(--muted);
+  box-shadow: var(--shadow);
+}
+
+[data-theme="light"] .focus_card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(238, 241, 247, 0.9));
+}
+
+.focus_label {
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
 .grid_item {
   width: 100%;
   max-width: 64px;
