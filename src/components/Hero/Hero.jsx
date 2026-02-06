@@ -1,6 +1,7 @@
 import React from "react";
 import "../Hero/Hero.css";
 import Typed from "react-typed";
+import { Link as ScrollLink } from "react-scroll";
 
 
 function Hero() {
@@ -9,28 +10,44 @@ function Hero() {
   };
   return (
     <>
-      <main id="hero">
-        <section className="hero_container">
-          <p className="hero_title">Hello 👋</p>
-          <p className="hero_title2 name">I'M THAN MYO HTET</p>
-          <Typed className="hero_title3"
-          strings={[
-            "Full-Stack Web Developer",
-            "Responsive Web Design",
-          ]}
-          typeSpeed={50}
-          backSpeed={100}
-          loop
+      <main id="hero" className="hero">
+        <section className="hero_container section">
+          <div className="hero_badges">
+            <span className="chip">Available for backend roles</span>
+            <span className="chip">Based in Myanmar</span>
+          </div>
+          <p className="hero_title">Hi, I&apos;m Than Myo Htet</p>
+          <h1 className="hero_title2">
+            Backend Developer crafting scalable systems and delightful product experiences.
+          </h1>
+          <Typed
+            className="hero_title3"
+            strings={["Python & Django Specialist", "Full-Stack Web Developer"]}
+            typeSpeed={50}
+            backSpeed={100}
+            loop
           />
-          <button className="resume_button" onClick={openResume}>
-            Get My Resume
-          </button>
+          <p className="hero_support">
+            I build reliable backend services, modern web apps, and data-driven tools with a focus on clean
+            architecture and user impact.
+          </p>
+          <div className="hero_actions">
+            <button className="primary-btn" onClick={openResume}>
+              Download Resume
+            </button>
+            <ScrollLink
+              to="contact"
+              smooth={true}
+              ignoreCancelEvents={true}
+              className="ghost-btn hero_link"
+            >
+              Let&apos;s Talk
+            </ScrollLink>
+          </div>
         </section>
       </main>
     </>
   );
 }
-
-window.addEventListener("load", Hero);
 
 export default Hero;

@@ -23,7 +23,7 @@ function Particless() {
         options={{
           background: {
             color: {
-              value: "#000000",
+              value: "transparent",
             },
           },
 
@@ -34,83 +34,23 @@ function Particless() {
           fpsLimit: 120,
           particles: {
             number: {
-              value: 80,
+              value: 45,
               density: {
                 enable: true,
               },
             },
             color: {
-              value: "#ffffff",
+              value: "#6ee7ff",
             },
             shape: {
-              type: "polygon",
+              type: "circle",
               stroke: {
                 width: 0,
                 color: "#000000",
               },
-              polygon: [
-                {
-                  nb_sides: 3,
-                  particles: {
-                    opacity: {
-                      value: 0.8,
-                      random: {
-                        enable: true,
-                        minimumValue: 0.5,
-                      },
-                    },
-                    size: {
-                      value: 12,
-                      random: {
-                        enable: true,
-                        minimumValue: 10,
-                      },
-                    },
-                    color: {
-                      value: "#1500ff",
-                    },
-                  },
-                },
-                {
-                  nb_sides: 5,
-                  particles: {
-                    opacity: {
-                      value: 0.5,
-                    },
-                    size: {
-                      value: 8,
-                      random: {
-                        enable: false,
-                      },
-                    },
-                    color: {
-                      value: "#00a2ff",
-                    },
-                  },
-                },
-                {
-                  nb_sides: 8,
-                  particles: {
-                    opacity: {
-                      value: 1,
-                      random: false,
-                    },
-                    size: {
-                      value: 20,
-                      random: {
-                        enable: true,
-                        minimumValue: 15,
-                      },
-                    },
-                    color: {
-                      value: "#181680",
-                    },
-                  },
-                },
-              ],
             },
             opacity: {
-              value: 0.5,
+              value: 0.35,
               random: false,
               anim: {
                 enable: false,
@@ -120,7 +60,7 @@ function Particless() {
               },
             },
             size: {
-              value: 5,
+              value: 3,
               random: true,
               anim: {
                 enable: false,
@@ -131,14 +71,14 @@ function Particless() {
             },
             line_linked: {
               enable: true,
-              distance: 150,
-              color: "#009dff",
-              opacity: 0.4,
+              distance: 160,
+              color: "#7c5cff",
+              opacity: 0.25,
               width: 1,
             },
             move: {
               enable: true,
-              speed: 2,
+              speed: 1,
               direction: "none",
               random: false,
               straight: false,
@@ -194,7 +134,7 @@ function Particless() {
           },
           retina_detect: true,
           background: {
-            color: "#000000",
+            color: "transparent",
             image: "",
             position: "50% 50%",
             repeat: "no-repeat",

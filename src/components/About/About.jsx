@@ -26,14 +26,14 @@ function About() {
   return (
     <>
       <div className="about"></div>
-      <section className="about_container">
+      <section id="about" className="about_container section">
         <AnimateOnScroll animateIn="about_title">
           <p className="about_title">About Me</p>
         </AnimateOnScroll>
 
 
         <div className="cards_container">
-          <AnimateOnScroll animateIn="about_box" className="card_container">
+          <AnimateOnScroll animateIn="about_box" className="card_container about_intro">
             <section>
               <p className="card_text">
               Hello, I&apos;m Than Myo Htet, I am a Backend Developer with over 1 year of industry experience, 
@@ -58,7 +58,7 @@ function About() {
           </AnimateOnScroll>
 
           <AnimateOnScroll animateIn="skills_title">
-            <p className="about_title2">Skills</p>
+            <p id="skills" className="about_title2">Skills</p>
           </AnimateOnScroll>
           <section className="card_container-general">
             <AnimateOnScroll

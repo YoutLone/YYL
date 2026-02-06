@@ -110,9 +110,9 @@ function Projects() {
     <>
       <div className="project"></div>
       <AnimateOnScroll animateIn="proyect_title">
-        <p className="project_title">Projects</p>
+        <p id="project" className="project_title">Projects</p>
       </AnimateOnScroll>
-      <section className="project_container_general">
+      <section className="project_container_general section">
         <div className="projects_container">
           {projects.map((project) => (
             <AnimateOnScroll
@@ -125,7 +125,18 @@ function Projects() {
                 className="project_card"
                 onClick={() => openModal(project)}
               >
-                <img src={project.image} alt={project.name} />
+                <div className="project_media">
+                  <img src={project.image} alt={project.name} />
+                </div>
+                <div className="project_info">
+                  <h3>{project.name}</h3>
+                  <p>{project.description}</p>
+                  <div className="project_tags">
+                    {project.technology.slice(0, 4).map((tech, index) => (
+                      <span key={index}>#{tech}</span>
+                    ))}
+                  </div>
+                </div>
               </section>
             </AnimateOnScroll>
           ))}

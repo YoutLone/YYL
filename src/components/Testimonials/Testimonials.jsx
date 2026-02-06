@@ -68,10 +68,10 @@ function Testimonials() {
     <>
       <div className="testimonials"></div>
       <AnimateOnScroll animateIn="skills_title">
-        <p className="about_title2">Testimonials</p>
+        <p id="testimonials" className="about_title2">Testimonials</p>
       </AnimateOnScroll>
 
-      <section className="testimonials_container">
+      <section className="testimonials_container section">
         {testimonials.map((testimonial) => (
           <AnimateOnScroll
             key={testimonial.id}
@@ -83,6 +83,9 @@ function Testimonials() {
                 src={testimonial.image}
                 alt={`Avatar of ${testimonial.name}`}
                 className="testimonial_image"
+                loading="lazy"
+                decoding="async"
+                referrerPolicy="no-referrer"
               />
               <p className="about_title3">{testimonial.name}</p>
               <p className="card_text">{testimonial.description}</p>
