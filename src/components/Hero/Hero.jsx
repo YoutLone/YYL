@@ -6,7 +6,7 @@ import { Link as ScrollLink } from "react-scroll";
 
 function Hero() {
   const openResume = () => {
-    window.open("https://drive.google.com/file/d/1-HycPYrnPkeiow13f2Qwm3eMXr7istwG/view?usp=sharing", "_blank");
+    window.open("https://drive.google.com/file/d/1upLSGK2IQqyjZ58slMh-5A7XmiVdBzRN/view?usp=sharing", "_blank");
   };
   return (
     <>
@@ -34,11 +34,11 @@ function Hero() {
           </p>
           <div className="hero_stats">
             <div>
-              <span>2</span>
+              <span>3</span>
               Large-scale systems shipped
             </div>
             <div>
-              <span>1+</span>
+              <span>2+</span>
               Years in production delivery
             </div>
             <div>

@@ -21,17 +21,21 @@ const ProjectModal = ({ project, onClose }) => {
           ))}
         </p>
         <div className="modal-buttons">
-        <a href={project.liveDemo} target="_blank" rel="noopener noreferrer">
-          Live Demo
-        </a>
-        {project.link ? (
-          <a href={project.link} target="_blank" rel="noopener noreferrer">
-            GitHub
-          </a>
-        ) : (
-          <p className="apology-message">Sorry, the source code for this project is private.</p>
-        )}
-      </div>
+          {project.liveDemo ? (
+            <a href={project.liveDemo} target="_blank" rel="noopener noreferrer">
+              Live Demo
+            </a>
+          ) : (
+            <p className="apology-message">Live demo coming soon.</p>
+          )}
+          {project.link ? (
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
+          ) : (
+            <p className="apology-message">Sorry, the source code for this project is private.</p>
+          )}
+        </div>
 
       </div>
     </div>

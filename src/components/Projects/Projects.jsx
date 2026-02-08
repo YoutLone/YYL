@@ -8,12 +8,23 @@ import Space from "../../../public/pages_images/space.png";
 import Magician from "../../../public/pages_images/magician.png";
 import Food from "../../../public/pages_images/food.png"
 import Book from '../../../public/pages_images/book.png'
+import SmartPost from '../../../public/pages_images/smartpost.png'
 import AnimateOnScroll from "react-animate-on-scroll";
 import ProjectModal from "../Modal/ProjectModal";
 
 const projects = [
   {
     id: 1,
+    name: 'SMARTPOST AI',
+    description:'Leading the development of an AI-powered social media management platform. Implemented core features including AI-driven content generation, automated Facebook post scheduling and publishing, intelligent performance analytics with scoring, and a Retrieval-Augmented Generation (RAG) system to learn from historical post data. Built a responsive dashboard for content strategy management and customer conversation insights. (Project in Active Development)',
+    technology: ['Python', 'JavaScript', 'Django', 'Dify', 'Celery', 'PostgreSQL', 'OpenAI API', 'LangChain', 'ChromaDB', 'Tailwind CSS'],
+    role: 'Backend Engineer',
+    image: SmartPost,
+    link: '',
+    liveDemo: '',
+  },
+  {
+    id: 2,
     name: 'USEN NETWORK SUPPORT',
     description:'Contributed to the development of a management web application for store and user administration. Implemented key features such as store and user account management, CSV import/export for bulk data handling, contract management, and customizable store templates. Ensured efficient data handling and user authentication using Python and Django.',
     technology: ['Python', 'Django', 'Javascript','React', 'PostgreSQL','AWS'],
@@ -23,7 +34,7 @@ const projects = [
     liveDemo: 'http://ec2-52-195-232-232.ap-northeast-1.compute.amazonaws.com/',
   },
   {
-    id: 2,
+    id: 3,
     name: 'LocaBoo',
     description:'Designed and developed a multi-user platform with four roles: admin, member, partner_admin, and partner_member. Implemented user registration with company-based access for partners, an email and notification system for real-time updates, and admin-controlled coupon management. Developed an order management system supporting three types of orders: posting, printing, and newspaper.',
     technology: ['Python', 'Django','Celery','Websocket','Javascript','React', 'PostgreSQL','AWS'],
@@ -33,7 +44,7 @@ const projects = [
     liveDemo: 'http://staging.locaboo.jp/',
   },
   {
-    id: 3,
+    id: 4,
     name: 'Yacht Rental App',
     description:
     'Yacht Rental is the react client of a full stack yacht reservation web application built on the rails API.The main function of the app is to allow users to book reservations for renting a yacht.',
@@ -44,7 +55,7 @@ const projects = [
     liveDemo: 'https://beta-yacht-rental.netlify.app/',
   },
   {
-    id: 4,
+    id: 5,
     name: 'MovieVerse',
     description:
       'This application, known as the MovieVerse, is developed as part of the Microverse REACT-REDUX capstone project.Its primary function is to serve as a TV show database, with all shows being sourced from an API.',
@@ -55,7 +66,7 @@ const projects = [
     liveDemo: 'https://movieverse-rzc1.onrender.com/',
   },
   {
-    id: 5,
+    id: 6,
     name: 'Space Travellers App',
     description:
       'Space Travellers application developed by using REACT. The app serves as a platform for reserving rockets and joining missions, offering a diverse range of functionalities through API calls.',
@@ -66,7 +77,7 @@ const projects = [
     liveDemo: 'https://space-travellers-hub-uw83.onrender.com/',
   },
   {
-    id: 6,
+    id: 7,
     name: 'Math-Magicians',
     description:
       'Math-Magicians is a website for all fans of mathematics.It serves as a Single Page Application (SPA) enabling users to perform basic mathematical computations and explore random quotes relative to mathematics.',
@@ -77,7 +88,7 @@ const projects = [
     liveDemo: 'https://math-magicians-5nkr.onrender.com/',
   },
   {
-    id: 7,
+    id: 8,
     name: 'Book-Store',
     description:
      'Book Store is a straightfoward application developed with React that enables you to add and remove books.To add a book, simply provide the book\'s name and author, and then press the enter key or click the submit button to add it.',
@@ -88,7 +99,7 @@ const projects = [
     liveDemo: 'https://resonant-moxie-c67946.netlify.app/',
   },
   {
-    id: 8,
+    id: 9,
     name: 'Gyi Gyi Paw - Restaurant',
     description:
      'This website is the outcome of the initial Capstone Project undertaken during the Microverse Program. This is the Restaurant Website to know the information and booking for their table.',
