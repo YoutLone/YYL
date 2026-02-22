@@ -18,7 +18,7 @@ const projects = [
     name: 'SMARTPOST AI',
     description:'Leading the development of an AI-powered social media management platform. Implemented core features including AI-driven content generation, automated Facebook post scheduling and publishing, intelligent performance analytics with scoring, and a Retrieval-Augmented Generation (RAG) system to learn from historical post data. Built a responsive dashboard for content strategy management and customer conversation insights. (Project in Active Development)',
     technology: ['Python', 'JavaScript', 'Django', 'Dify', 'Celery', 'PostgreSQL', 'OpenAI API', 'LangChain', 'ChromaDB', 'Tailwind CSS'],
-    role: 'Backend Engineer',
+    role: 'Full-Stack Developer',
     image: SmartPost,
     link: '',
     liveDemo: '',
