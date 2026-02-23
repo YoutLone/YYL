@@ -31,7 +31,7 @@ const projects = [
     role: 'Backend Engineer',
     image: USEN,
     link: '',
-    liveDemo: 'http://ec2-52-195-232-232.ap-northeast-1.compute.amazonaws.com/',
+    liveDemo: 'https://uns.usen-networks.ne.jp/',
   },
   {
     id: 3,
