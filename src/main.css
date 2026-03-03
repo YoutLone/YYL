@@ -92,7 +92,7 @@ a {
 .section {
   width: min(1120px, 100%);
   margin: 0 auto;
-  padding: 96px 24px;
+  padding: 56px 24px;
 }
 
 .section-title {
