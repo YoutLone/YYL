@@ -12,39 +12,55 @@ function Hero() {
     <>
       <main id="hero" className="hero">
         <section className="hero_container section">
-          <div className="hero_badges">
-            <span className="chip">Backend Engineer</span>
-            <span className="chip">Python • Django • AWS</span>
-            <span className="chip">Based in Myanmar</span>
-          </div>
-          <p className="hero_title">Hi, I&apos;m Than Myo Htet</p>
-          <h1 className="hero_title2">
-            I build resilient backend systems and data-driven products that scale with confidence.
-          </h1>
-          <Typed
-            className="hero_title3"
-            strings={["Backend Systems Specialist", "API & Data Platform Builder"]}
-            typeSpeed={50}
-            backSpeed={100}
-            loop
-          />
-          <p className="hero_support">
-            Specializing in backend architecture, automation, and high-impact features for real-world platforms.
-            I collaborate closely with product teams to ship stable, scalable systems.
-          </p>
-          <div className="hero_stats">
-            <div>
-              <span>3</span>
-              Large-scale systems shipped
+          <div className="hero_layout">
+            <div className="hero_content">
+              <div className="hero_badges">
+                <span className="chip">Backend Engineer</span>
+                <span className="chip">Python • Django • Celery</span>
+                <span className="chip">API + AI Workflow Integration</span>
+              </div>
+              <p className="hero_title">Hi, I&apos;m Than Myo Htet</p>
+              <h1 className="hero_title2">
+                I design and ship reliable backend platforms for product, automation, and AI-powered workflows.
+              </h1>
+              <Typed
+                className="hero_title3"
+                strings={["Distributed Backend Systems", "API Automation and Integrations", "Data and AI Workflow Builder"]}
+                typeSpeed={50}
+                backSpeed={100}
+                loop
+              />
+              <p className="hero_support">
+                Focused on scalable architecture, robust APIs, background processing, and operational stability in
+                production environments.
+              </p>
+              <div className="hero_stats">
+                <div>
+                  <span>2+</span>
+                  Years backend experience
+                </div>
+                <div>
+                  <span>3+</span>
+                  Production-grade systems
+                </div>
+                <div>
+                  <span>10+</span>
+                  Backend features shipped
+                </div>
+              </div>
             </div>
-            <div>
-              <span>2+</span>
-              Years in production delivery
-            </div>
-            <div>
-              <span>10+</span>
-              Backend-focused features
-            </div>
+            <aside className="hero_panel">
+              <p className="hero_panel_title">System Profile</p>
+              <ul className="hero_panel_list">
+                <li><span>Core Stack</span> Python, Django, Celery, PostgreSQL</li>
+                <li><span>AI Stack</span> Dify, OpenAI API, LangChain, ChromaDB</li>
+                <li><span>Integrations</span> Facebook Graph API, automation pipelines</li>
+                <li><span>Focus</span> Reliability, async jobs, analytics workflows</li>
+              </ul>
+              <div className="hero_panel_footer">
+                <code>status: actively_building(SmartPost AI)</code>
+              </div>
+            </aside>
           </div>
           <div className="hero_actions">
             <button className="primary-btn" onClick={openResume}>

@@ -9,6 +9,7 @@ import Magician from "../../../public/pages_images/magician.png";
 import Food from "../../../public/pages_images/food.png"
 import Book from '../../../public/pages_images/book.png'
 import SmartPost from '../../../public/pages_images/smartpost.png'
+import KhinLay from "../../../public/pages_images/khin-lay.png";
 import AnimateOnScroll from "react-animate-on-scroll";
 import ProjectModal from "../Modal/ProjectModal";
 
@@ -18,7 +19,7 @@ const projects = [
     name: 'SMARTPOST AI',
     description:'Leading the development of an AI-powered social media management platform. Implemented core features including AI-driven content generation, automated Facebook post scheduling and publishing, intelligent performance analytics with scoring, and a Retrieval-Augmented Generation (RAG) system to learn from historical post data. Built a responsive dashboard for content strategy management and customer conversation insights. (Project in Active Development)',
     technology: ['Python', 'JavaScript', 'Django', 'Dify', 'Celery', 'PostgreSQL', 'OpenAI API', 'LangChain', 'ChromaDB', 'Tailwind CSS'],
-    role: 'Full-Stack Developer',
+    role: 'Backend Engineer',
     image: SmartPost,
     link: '',
     liveDemo: '',
@@ -43,8 +44,19 @@ const projects = [
     link: '',
     liveDemo: 'http://staging.locaboo.jp/',
   },
-  {
+    {
     id: 4,
+    name: 'KHIN LAY (တောင်ငူ မုန့်ဟင်းခါး)',
+    description:
+      'A static restaurant website built to present essential business information in a clean and user-friendly way. Visitors can explore the menu, view location details, and quickly access key restaurant information such as contact and service highlights. The project focuses on clear navigation, responsive layout, and straightforward content delivery for customers.',
+    technology: ['HTML', 'JavaScript', 'CSS', 'Tailwind', 'React'],
+    role: 'Frontend Developer',
+    image: KhinLay,
+    link: 'https://github.com/YoutLone/TGO.git',
+    liveDemo: 'https://khin-lay-mohinga.vercel.app/',
+  },
+  {
+    id: 5,
     name: 'Yacht Rental App',
     description:
     'Yacht Rental is the react client of a full stack yacht reservation web application built on the rails API.The main function of the app is to allow users to book reservations for renting a yacht.',
@@ -55,7 +67,7 @@ const projects = [
     liveDemo: 'https://beta-yacht-rental.netlify.app/',
   },
   {
-    id: 5,
+    id: 6,
     name: 'MovieVerse',
     description:
       'This application, known as the MovieVerse, is developed as part of the Microverse REACT-REDUX capstone project.Its primary function is to serve as a TV show database, with all shows being sourced from an API.',
@@ -66,7 +78,7 @@ const projects = [
     liveDemo: 'https://movieverse-rzc1.onrender.com/',
   },
   {
-    id: 6,
+    id: 7,
     name: 'Space Travellers App',
     description:
       'Space Travellers application developed by using REACT. The app serves as a platform for reserving rockets and joining missions, offering a diverse range of functionalities through API calls.',
@@ -77,7 +89,7 @@ const projects = [
     liveDemo: 'https://space-travellers-hub-uw83.onrender.com/',
   },
   {
-    id: 7,
+    id: 8,
     name: 'Math-Magicians',
     description:
       'Math-Magicians is a website for all fans of mathematics.It serves as a Single Page Application (SPA) enabling users to perform basic mathematical computations and explore random quotes relative to mathematics.',
@@ -88,7 +100,7 @@ const projects = [
     liveDemo: 'https://math-magicians-5nkr.onrender.com/',
   },
   {
-    id: 8,
+    id: 9,
     name: 'Book-Store',
     description:
      'Book Store is a straightfoward application developed with React that enables you to add and remove books.To add a book, simply provide the book\'s name and author, and then press the enter key or click the submit button to add it.',
@@ -99,7 +111,7 @@ const projects = [
     liveDemo: 'https://resonant-moxie-c67946.netlify.app/',
   },
   {
-    id: 9,
+    id: 10,
     name: 'Gyi Gyi Paw - Restaurant',
     description:
      'This website is the outcome of the initial Capstone Project undertaken during the Microverse Program. This is the Restaurant Website to know the information and booking for their table.',
@@ -108,13 +120,21 @@ const projects = [
     image: Food,
     link: 'https://github.com/YoutLone/Capstone-Project.git',
     liveDemo: 'https://youtlone.github.io/Capstone-Project/',
-  },
+  }
 ];
 
 
 function Projects() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
+  const [activeFilter, setActiveFilter] = useState("backend");
+
+  const filteredProjects = projects.filter((project) => {
+    if (activeFilter === "all") {
+      return true;
+    }
+    return project.role.toLowerCase().includes("backend");
+  });
 
   const openModal = (project) => {
     setSelectedProject(project);
@@ -132,8 +152,24 @@ function Projects() {
         <p id="project" className="project_title">Projects</p>
       </AnimateOnScroll>
       <section className="project_container_general section">
+        <div className="project_filters">
+          <button
+            type="button"
+            className={activeFilter === "backend" ? "filter_btn active" : "filter_btn"}
+            onClick={() => setActiveFilter("backend")}
+          >
+            Backend Projects
+          </button>
+          <button
+            type="button"
+            className={activeFilter === "all" ? "filter_btn active" : "filter_btn"}
+            onClick={() => setActiveFilter("all")}
+          >
+            All Projects
+          </button>
+        </div>
         <div className="projects_container">
-          {projects.map((project) => (
+          {filteredProjects.map((project) => (
             <AnimateOnScroll
               key={project.id}
               animateIn="proyects"
@@ -150,6 +186,9 @@ function Projects() {
                 <div className="project_info">
                   <h3>{project.name}</h3>
                   <p className="project_role">Role: {project.role}</p>
+                  {project.role.toLowerCase().includes("backend") && (
+                    <span className="backend_badge">Backend Focus</span>
+                  )}
                   <p>{project.description}</p>
                   <div className="project_tags">
                     {project.technology.slice(0, 4).map((tech, index) => (

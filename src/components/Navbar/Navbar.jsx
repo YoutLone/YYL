@@ -141,6 +141,14 @@ function Navbar() {
           </div>
         </nav>
       </header>
+      {isNavOpen && (
+        <button
+          type="button"
+          className="nav_backdrop"
+          aria-label="Close menu"
+          onClick={closeNav}
+        />
+      )}
     </>
   );
 }

@@ -73,6 +73,29 @@ function About() {
             </div>
           </section>
 
+          <section className="backend_specialization">
+            <article className="specialization_block">
+              <p className="specialization_title">Backend Specialization</p>
+              <div className="specialization_tags">
+                <span>REST API Design</span>
+                <span>Async Task Processing</span>
+                <span>AI Content Pipelines</span>
+                <span>Database Performance</span>
+                <span>Third-party API Integrations</span>
+                <span>Production Monitoring</span>
+              </div>
+            </article>
+            <article className="specialization_block">
+              <p className="specialization_title">SmartPost AI Technical Scope</p>
+              <ul className="specialization_list">
+                <li>AI-driven content generation with Dify and OpenAI API orchestration.</li>
+                <li>Automated publishing flow via Facebook Graph API with scheduling logic.</li>
+                <li>RAG-based retrieval layer with LangChain and ChromaDB for historical reuse.</li>
+                <li>Performance analytics and scoring service for campaign optimization.</li>
+              </ul>
+            </article>
+          </section>
+
           <AnimateOnScroll animateIn="skills_title">
             <p id="skills" className="about_title2">Skills</p>
           </AnimateOnScroll>

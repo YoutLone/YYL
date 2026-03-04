@@ -111,6 +111,56 @@
   margin-bottom: 8px;
 }
 
+.backend_specialization {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.specialization_block {
+  padding: 22px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: linear-gradient(140deg, rgba(16, 23, 37, 0.95), rgba(12, 18, 31, 0.8));
+  box-shadow: var(--shadow);
+}
+
+[data-theme="light"] .specialization_block {
+  background: linear-gradient(140deg, rgba(255, 255, 255, 0.95), rgba(241, 245, 251, 0.92));
+}
+
+.specialization_title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+.specialization_tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.specialization_tags span {
+  font-size: 0.82rem;
+  color: var(--text);
+  padding: 7px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.specialization_list {
+  color: var(--muted);
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+}
+
 .grid_item {
   width: 100%;
   max-width: 64px;
@@ -131,6 +181,12 @@
 @media (min-width: 768px) {
   .card_container-general {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .backend_specialization {
+    grid-template-columns: 1fr;
   }
 }
 

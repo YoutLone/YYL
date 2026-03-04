@@ -21,12 +21,6 @@ function Particless() {
         init={particlesInit}
         loaded={particlesLoaded}
         options={{
-          background: {
-            color: {
-              value: "transparent",
-            },
-          },
-
           fullScreen: {
             enable: true,
             zIndex: -5,
