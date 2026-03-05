@@ -20,6 +20,8 @@ import Postgresql from "../../../public/Logos/postgresql.jpg";
 import Rails from "../../../public/Logos/rails.png";
 import Vscode from "../../../public/Logos/vscode.png";
 import Terminal from "../../../public/Logos/terminal.png";
+import Docker from "../../../public/Logos/docker.jpg";
+import Figma from "../../../public/Logos/figma.jpg";
 import AnimateOnScroll from "react-animate-on-scroll";
 
 function About() {
@@ -35,14 +37,39 @@ function About() {
         <div className="cards_container">
           <AnimateOnScroll animateIn="about_box" className="card_container about_intro">
             <section>
-              <p className="card_text">
-              Hello, I&apos;m Than Myo Htet, a Backend Developer with over 2 years of industry experience,
-              specializing in Python and Django for web development. I&apos;ve delivered real-world projects
-              focused on scalable systems and dependable APIs. Most recently, I implemented SmartPost AI,
-              a marketing automation project that generates content using Dify and integrates with the
-              Facebook Graph API for publishing and performance workflows.
-              I&apos;m a dedicated team player with strong communication and leadership skills, and I&apos;m
-              eager to deepen my DevOps expertise and expand my backend capabilities.
+              <div className="terminal_card">
+                <div className="terminal_header">
+                  <div className="terminal_dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p className="terminal_title">backend_profile.sh</p>
+                </div>
+                <div className="terminal_body">
+                  <p className="terminal_line">
+                    <span className="terminal_prompt">$</span> role --current
+                  </p>
+                  <p className="terminal_line terminal_output typed_line typed_1">Backend Developer (3+ years)</p>
+                  <p className="terminal_line">
+                    <span className="terminal_prompt">$</span> stack --core
+                  </p>
+                  <p className="terminal_line terminal_output typed_line typed_2">Python | Django | PostgreSQL | Celery</p>
+                  <p className="terminal_line">
+                    <span className="terminal_prompt">$</span> focus --areas
+                  </p>
+                  <p className="terminal_line terminal_output typed_line typed_3">API Design | Integrations | Automation | Reliability</p>
+                  <p className="terminal_line">
+                    <span className="terminal_prompt">$</span> project --active
+                  </p>
+                  <p className="terminal_line terminal_output typed_line typed_4">SmartPost AI (AI Marketing Automation Platform)</p>
+                </div>
+              </div>
+
+              <p className="about_summary">
+                I build scalable backend systems with Python and Django, focusing on dependable APIs and production
+                workflows. My recent work includes SmartPost AI, integrating Dify and Facebook Graph API for
+                content generation, scheduling, and analytics automation.
               </p>
 
               <div className="red_container">
@@ -153,6 +180,8 @@ function About() {
                   <img src={Vite} alt="" className="grid_item" />
                   <img src={Vscode} alt="" className="grid_item" />
                   <img src={Terminal} alt="" className="grid_item" />
+                  <img src={Docker} alt="" className="grid_item" />
+                  <img src={Figma} alt="" className="grid_item" />
                 </div>
               </section>
             </AnimateOnScroll>

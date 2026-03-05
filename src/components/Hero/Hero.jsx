@@ -6,7 +6,7 @@ import { Link as ScrollLink } from "react-scroll";
 
 function Hero() {
   const openResume = () => {
-    window.open("https://drive.google.com/file/d/1upLSGK2IQqyjZ58slMh-5A7XmiVdBzRN/view?usp=sharing", "_blank");
+    window.open("https://drive.google.com/file/d/1MnTJImhwJLBNjRdXbyKSgSqSsBnwPA3c/view?usp=sharing", "_blank");
   };
   return (
     <>
@@ -36,7 +36,7 @@ function Hero() {
               </p>
               <div className="hero_stats">
                 <div>
-                  <span>2+</span>
+                  <span>3+</span>
                   Years backend experience
                 </div>
                 <div>
@@ -54,7 +54,7 @@ function Hero() {
               <ul className="hero_panel_list">
                 <li><span>Core Stack</span> Python, Django, Celery, PostgreSQL</li>
                 <li><span>AI Stack</span> Dify, OpenAI API, LangChain, ChromaDB</li>
-                <li><span>Integrations</span> Facebook Graph API, automation pipelines</li>
+                <li><span>Integrations</span> Facebook Graph API, Google Cloud Console (Google Login), payment gateways, and third-party APIs</li>
                 <li><span>Focus</span> Reliability, async jobs, analytics workflows</li>
               </ul>
               <div className="hero_panel_footer">
