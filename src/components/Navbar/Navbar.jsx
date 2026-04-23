@@ -7,13 +7,20 @@ function Navbar() {
   const [theme, setTheme] = useState("dark");
 
   useEffect(() => {
-    // GOW theme is always dark — still allow toggling for accessibility
-    document.documentElement.removeAttribute("data-theme");
-    setTheme("dark");
+    const savedTheme = localStorage.getItem("gow-theme");
+    const initialTheme = savedTheme === "light" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", initialTheme);
+    setTheme(initialTheme);
   }, []);
 
   const handleNavToggle = () => setIsNavOpen((v) => !v);
   const closeNav = () => setIsNavOpen(false);
+  const toggleTheme = () => {
+    const nextTheme = theme === "dark" ? "light" : "dark";
+    setTheme(nextTheme);
+    document.documentElement.setAttribute("data-theme", nextTheme);
+    localStorage.setItem("gow-theme", nextTheme);
+  };
 
   const links = [
     { to: "hero", label: "Home" },
@@ -59,6 +66,17 @@ function Navbar() {
                     </ScrollLink>
                   </li>
                 ))}
+                <li className="nav-item">
+                  <button
+                    type="button"
+                    className="theme_toggle"
+                    onClick={toggleTheme}
+                    aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+                    title={theme === "dark" ? "Switch to Light Mode" : "Switch to Dark Mode"}
+                  >
+                    <i className={`bi ${theme === "dark" ? "bi-sun-fill" : "bi-moon-fill"}`}></i>
+                  </button>
+                </li>
               </ul>
             </div>
           </div>
