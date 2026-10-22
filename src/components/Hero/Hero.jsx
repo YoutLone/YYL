@@ -62,7 +62,7 @@ function Hero() {
             <ul className="hero_panel_list">
               <li>
                 <span>Core Stack</span>
-                Python, Django, Celery, PostgreSQL
+                Python, Django, Odoo, Celery, PostgreSQL
               </li>
               <li>
                 <span>AI Stack</span>

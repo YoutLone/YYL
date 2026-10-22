@@ -15,6 +15,7 @@ import Netlify from "../../../public/Logos/netlify.png";
 import Ruby from "../../../public/Logos/ruby.png";
 import Python from "../../../public/Logos/python.jpg";
 import Django from "../../../public/Logos/django.jpg";
+import Odoo from "../../../public/Logos/odoo.png";
 import Mysql from "../../../public/Logos/mysql.png";
 import Postgresql from "../../../public/Logos/postgresql.jpg";
 import Rails from "../../../public/Logos/rails.png";
@@ -54,7 +55,7 @@ function About() {
                   <p className="terminal_line">
                     <span className="terminal_prompt">$</span> stack --core
                   </p>
-                  <p className="terminal_line terminal_output typed_line typed_2">Python | Django | PostgreSQL | Celery</p>
+                  <p className="terminal_line terminal_output typed_line typed_2">Python | Django | Odoo | PostgreSQL | Celery</p>
                   <p className="terminal_line">
                     <span className="terminal_prompt">$</span> focus --areas
                   </p>
@@ -67,9 +68,9 @@ function About() {
               </div>
 
               <p className="about_summary">
-                I build scalable backend systems with Python and Django, focusing on dependable APIs and production
-                workflows. My recent work includes SmartPost AI, integrating Dify and Facebook Graph API for
-                content generation, scheduling, and analytics automation.
+                I build scalable backend systems with Python and Django and develop Odoo solutions, focusing on
+                dependable APIs and production workflows. My recent work includes SmartPost AI, integrating Dify
+                and Facebook Graph API for content generation, scheduling, and analytics automation.
               </p>
 
               <div className="red_container">
@@ -105,6 +106,7 @@ function About() {
               <p className="specialization_title">Backend Specialization</p>
               <div className="specialization_tags">
                 <span>REST API Design</span>
+                <span>Odoo Development</span>
                 <span>Async Task Processing</span>
                 <span>AI Content Pipelines</span>
                 <span>Database Performance</span>
@@ -138,6 +140,7 @@ function About() {
                   <img src={Ruby} alt="" className="grid_item" />
                   <img src={Python} alt="" className="grid_item" />
                   <img src={Django} alt="" className="grid_item" />
+                  <img src={Odoo} alt="Odoo" className="grid_item" />
                   <img src={Mysql} alt="" className="grid_item" />
                   <img src={Postgresql} alt="" className="grid_item" />
                   <img src={Rails} alt="" className="grid_item" />
